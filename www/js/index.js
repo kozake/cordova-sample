@@ -34,6 +34,10 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        document.getElementById("irof").addEventListener("click", function(e) {
+          navigator.app.loadUrl('http://www.yahoo.co.jp', {wait:2000, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000, openexternal: true})
+        })
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
