@@ -36,7 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
 
         document.getElementById("irof").addEventListener("click", function(e) {
-          navigator.app.loadUrl('http://www.yahoo.co.jp', {wait:2000, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000, openexternal: true})
+          navigator.app.loadUrl('http://www.sakai.zaq.ne.jp/dujms904/snakerof/', {wait:0, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000, openexternal: false})
         })
     },
     // Update DOM on a Received Event
