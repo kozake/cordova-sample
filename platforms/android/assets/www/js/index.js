@@ -35,10 +35,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        document.getElementById("irof").addEventListener("click", function(e) {
-          navigator.app.loadUrl(
-            'http://www.sakai.zaq.ne.jp/dujms904/snakerof/',
-            {wait:0, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000, openexternal: false})
+        document.getElementById("sample").addEventListener("click", function(e) {
+          location.replace('sample.html')
         })
     },
     // Update DOM on a Received Event
