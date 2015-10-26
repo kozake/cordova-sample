@@ -5,11 +5,19 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8">
         <title>Hello Sample</title>
     </head>
     <body>
         <section>
-          <a href="#" id="sample1">[sample1] 別ドメインを内部ブラウザで読み込む</a>
+          <a href="http://www.sakai.zaq.ne.jp/dujms904/snakerof/" id="sample1">[sample1] 別ドメインを内部ブラウザで読み込む</a>
+          <p>
+            config.xmlのallow-navigationで指定したURLは内部ブラウザで読み込むことができる。<br>
+            allow-intentのほうが優先されるので、注意が必要
+          </p>
+        </section>
+        <section>
+          <a href="sample2.html" id="sample1">[sample2] bootstrapの動作確認</a>
         </section>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/sample.js"></script>

@@ -36,7 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
 
         document.getElementById("sample").addEventListener("click", function(e) {
-          location.replace('sample.html')
+          location.href = 'sample.html'
         })
     },
     // Update DOM on a Received Event

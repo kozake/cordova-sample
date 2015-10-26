@@ -10,11 +10,6 @@ var app = {
 
     onDeviceReady: function() {
 
-        document.getElementById("sample1").addEventListener("click", function(e) {
-          navigator.app.loadUrl(
-            'http://www.sakai.zaq.ne.jp/dujms904/snakerof/',
-            {wait:0, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000, openexternal: false})
-        })
     }
 };
 

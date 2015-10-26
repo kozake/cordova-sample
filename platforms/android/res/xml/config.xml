@@ -20,5 +20,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://*/*" />
+    <allow-navigation href="http://www.sakai.zaq.ne.jp/dujms904/*/*" />
 </widget>
