@@ -20,7 +20,15 @@
     <body>
 
       <div id="app">
-          {{ message }}
+        <input class="form-control" placeholder="Input task" v-model="newTodo" v-on:keyup.enter="addTodo">
+        <ul>
+          <li v-for="todo in todos">
+            <h2>
+              <span class="label label-info">{{ todo.text }}</span>
+              <button class="btn" v-on:click="removeTodo($index)">X</button>
+            </h2>
+          </li>
+        </ul>
       </div>
 
       <script type="text/javascript" src="cordova.js"></script>
