@@ -31,4 +31,36 @@ $(function() {
         }
     });
     $('#messages').puigrowl();
+
+    $('#dlg').puidialog({
+        showEffect: 'fade',
+        hideEffect: 'fade',
+        minimizable: true,
+        maximizable: true,
+        responsive: true,
+        minWidth: 200,
+        modal: true,
+        buttons: [{
+                text: 'Yes',
+                icon: 'fa-check',
+                click: function() {
+                    $('#dlg').puidialog('hide');
+                }
+            },
+            {
+                text: 'No',
+                icon: 'fa-close',
+                click: function() {
+                    $('#dlg').puidialog('hide');
+                }
+            }
+        ]
+    });
+
+    $('#btn-show').puibutton({
+        icon: 'fa-external-link-square',
+        click: function() {
+            $('#dlg').puidialog('show');
+        }
+    });
 });
